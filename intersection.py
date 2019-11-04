@@ -12,4 +12,15 @@ def Check_Overlaps(L_rect, R_rect, T_rect, B_rect):
 
     return False
 
+if __name__=='__main__':
+    left_rectangle=Set_Point(10,15)
+    right_rectangle=Set_Point(9,20)
+    top_rectangle=Set_Point(11,10)
+    bottom_rectangle = Set_Point(11, 15)
 
+    Result=Check_Overlaps(left_rectangle,right_rectangle,top_rectangle,bottom_rectangle)
+
+    if (Result == False):
+        print("No overlap")
+    else:
+        print("There is an overlap")
